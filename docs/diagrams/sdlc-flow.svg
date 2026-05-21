@@ -1,0 +1,89 @@
+<svg viewBox="0 0 860 168" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Eight agents mapped across the software development lifecycle from requirements through documentation">
+  <title>SDLC Agent Coverage</title>
+
+  <!-- Stage group backgrounds -->
+  <rect x="10" y="8" width="208" height="128" rx="10" fill="#F5F3FF" stroke="#A78BFA" stroke-width="1.5"/>
+  <rect x="222" y="8" width="208" height="128" rx="10" fill="#EFF6FF" stroke="#60A5FA" stroke-width="1.5"/>
+  <rect x="434" y="8" width="412" height="128" rx="10" fill="#F0FDF4" stroke="#4ADE80" stroke-width="1.5"/>
+
+  <!-- Stage labels -->
+  <text x="114" y="26" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" font-weight="700" fill="#6D28D9" letter-spacing="1">DISCOVER AND DESIGN</text>
+
+  <text x="326" y="26" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" font-weight="700" fill="#1D4ED8" letter-spacing="1">BUILD AND SHIP</text>
+
+  <text x="640" y="26" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" font-weight="700" fill="#15803D" letter-spacing="1">ASSURE AND OPERATE</text>
+
+  <!-- ── AGENT BOXES (y=46, h=75) ── -->
+
+  <!-- Business Analyst -->
+  <rect x="18" y="46" width="82" height="75" rx="7" fill="#FEF08A" stroke="#CA8A04" stroke-width="1.5"/>
+  <text x="59" y="77" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" font-weight="700" fill="#78350F">Business</text>
+  <text x="59" y="93" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" font-weight="700" fill="#78350F">Analyst</text>
+
+  <!-- Technical Architect -->
+  <rect x="126" y="46" width="82" height="75" rx="7" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.5"/>
+  <text x="167" y="77" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" font-weight="700" fill="#4C1D95">Technical</text>
+  <text x="167" y="93" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" font-weight="700" fill="#4C1D95">Architect</text>
+
+  <!-- Software Engineer -->
+  <rect x="230" y="46" width="82" height="75" rx="7" fill="#DBEAFE" stroke="#2563EB" stroke-width="1.5"/>
+  <text x="271" y="77" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" font-weight="700" fill="#1E3A8A">Software</text>
+  <text x="271" y="93" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" font-weight="700" fill="#1E3A8A">Engineer</text>
+
+  <!-- DevOps Engineer -->
+  <rect x="338" y="46" width="82" height="75" rx="7" fill="#FFEDD5" stroke="#EA580C" stroke-width="1.5"/>
+  <text x="379" y="77" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" font-weight="700" fill="#7C2D12">DevOps</text>
+  <text x="379" y="93" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" font-weight="700" fill="#7C2D12">Engineer</text>
+
+  <!-- QA Engineer -->
+  <rect x="442" y="46" width="82" height="75" rx="7" fill="#DCFCE7" stroke="#16A34A" stroke-width="1.5"/>
+  <text x="483" y="77" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" font-weight="700" fill="#14532D">QA</text>
+  <text x="483" y="93" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" font-weight="700" fill="#14532D">Engineer</text>
+
+  <!-- Security Engineer -->
+  <rect x="546" y="46" width="82" height="75" rx="7" fill="#FEE2E2" stroke="#DC2626" stroke-width="1.5"/>
+  <text x="587" y="77" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" font-weight="700" fill="#7F1D1D">Security</text>
+  <text x="587" y="93" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" font-weight="700" fill="#7F1D1D">Engineer</text>
+
+  <!-- SRE -->
+  <rect x="650" y="46" width="82" height="75" rx="7" fill="#CFFAFE" stroke="#0891B2" stroke-width="1.5"/>
+  <text x="691" y="87" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="700" fill="#164E63">SRE</text>
+
+  <!-- Technical Writer -->
+  <rect x="754" y="46" width="82" height="75" rx="7" fill="#F1F5F9" stroke="#64748B" stroke-width="1.5"/>
+  <text x="795" y="77" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" font-weight="700" fill="#1E293B">Technical</text>
+  <text x="795" y="93" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" font-weight="700" fill="#1E293B">Writer</text>
+
+  <!-- ── ARROWS (y=83) ── -->
+  <!-- BA → TA -->
+  <line x1="102" y1="83" x2="120" y2="83" stroke="#94A3B8" stroke-width="1.5"/>
+  <polygon points="126,83 118,79 118,87" fill="#94A3B8"/>
+  <!-- TA → SE -->
+  <line x1="210" y1="83" x2="224" y2="83" stroke="#94A3B8" stroke-width="1.5"/>
+  <polygon points="230,83 222,79 222,87" fill="#94A3B8"/>
+  <!-- SE → DevOps -->
+  <line x1="314" y1="83" x2="332" y2="83" stroke="#94A3B8" stroke-width="1.5"/>
+  <polygon points="338,83 330,79 330,87" fill="#94A3B8"/>
+  <!-- DevOps → QA -->
+  <line x1="422" y1="83" x2="436" y2="83" stroke="#94A3B8" stroke-width="1.5"/>
+  <polygon points="442,83 434,79 434,87" fill="#94A3B8"/>
+  <!-- QA → Security -->
+  <line x1="526" y1="83" x2="540" y2="83" stroke="#94A3B8" stroke-width="1.5"/>
+  <polygon points="546,83 538,79 538,87" fill="#94A3B8"/>
+  <!-- Security → SRE -->
+  <line x1="630" y1="83" x2="644" y2="83" stroke="#94A3B8" stroke-width="1.5"/>
+  <polygon points="650,83 642,79 642,87" fill="#94A3B8"/>
+  <!-- SRE → TW -->
+  <line x1="734" y1="83" x2="748" y2="83" stroke="#94A3B8" stroke-width="1.5"/>
+  <polygon points="754,83 746,79 746,87" fill="#94A3B8"/>
+
+  <!-- ── SDLC STAGE LABELS ── -->
+  <text x="59"  y="148" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#6B7280">Requirements</text>
+  <text x="167" y="148" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#6B7280">Architecture</text>
+  <text x="271" y="148" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#6B7280">Implementation</text>
+  <text x="379" y="148" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#6B7280">Deployment</text>
+  <text x="483" y="148" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#6B7280">Testing</text>
+  <text x="587" y="148" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#6B7280">Security</text>
+  <text x="691" y="148" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#6B7280">Operations</text>
+  <text x="795" y="148" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#6B7280">Documentation</text>
+</svg>
