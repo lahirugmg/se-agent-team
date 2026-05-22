@@ -81,6 +81,45 @@ Adapters contain no content of their own. They are thin: each adapter file impor
 
 Start with [adapters/claude/GETTING-STARTED.md](adapters/claude/GETTING-STARTED.md).
 
+## From Roles to Org Units
+
+So far each role has been described as a single area of responsibility. In a real organization, each of those eight roles is *not just a role* — it is a **unit, a team, or a department**: a Business Analysis group, an Architecture practice, an Engineering team, a QA team, a Security team, a Platform team, an SRE team, a Documentation team.
+
+The orchestrator pattern in Layer 4 isn't an implementation detail — it is what lets the same architecture model a single role *or* a whole department. The orchestrator plays the part of the team lead; the skill-specific micro-agents are the team's specialists. Adding a new specialist to the team is adding a new micro-agent. Replacing one is swapping a single skill file.
+
+![Roles expand into orchestrated teams of subagents](docs/diagrams/role-team-expansion.svg)
+
+### Sequential pre-work and post-work, parallel execution
+
+Once a role is modelled as a team, the three-phase workflow becomes a real concurrency contract — not just a conceptual one:
+
+| Phase | Concurrency | Why |
+|---|---|---|
+| **Pre-work** | Sequential, single agent | The role must converge on *one* spec, plan, or threat model before execution starts. Two parallel pre-work agents would produce two contradictory plans. |
+| **Execution** | **Parallel — multiple sub-agents run concurrently** | The deliverable is naturally divisible (independent code paths, separate test suites, independent vulnerability classes). The orchestrator fans out to as many sub-agents as the work has independent slices. |
+| **Post-work** | Sequential, single agent | The role must produce *one* verdict, review, or sign-off that aggregates the parallel output. Two post-work agents would produce two conflicting verdicts. |
+
+Concrete examples — for a single feature, in one turn:
+
+- **Software Engineer team** — orchestrator dispatches `spec-writing` first. Then runs `incremental-implementation`, `debugging`, and `refactoring` in parallel across three independent files or modules. Then runs `code-review` once to verify the merged output.
+- **QA Engineer team** — orchestrator dispatches `test-planning` first. Then runs `test-writing`, `browser-testing`, and `exploratory-testing` in parallel against the same build. Then runs `bug-report` once to consolidate findings into a single verdict.
+- **Security Engineer team** — orchestrator dispatches `threat-modeling` first. Then runs `security-audit`, `vulnerability-assessment`, and `dependency-vulnerability` in parallel — each is a different attack surface. Then runs `compliance-review` once to deliver the consolidated risk picture.
+
+### The same pattern in every unit
+
+This is how the system scales:
+
+| Concept | In one role | In the organization |
+|---|---|---|
+| Unit | the role | the team / department |
+| Lead | the orchestrator agent | the orchestrator agent (same pattern) |
+| Specialists | skill micro-agents | skill micro-agents (one per capability) |
+| Definition of the team | the role's `SKILLS.md` | the team's `SKILLS.md` |
+| Growth | add a skill file | add a skill file |
+| Throughput | one task at a time | parallel sub-agents inside execution |
+
+The same pattern applies to all eight role units. Each unit owns its own orchestrator, its own set of skill micro-agents, and its own slice of the SDLC — and inside each unit, the orchestrator decides how many sub-agents to fan out during execution based on how many independent work-streams the task contains. Editable source for the diagram: [docs/diagrams/role-team-expansion.excalidraw](docs/diagrams/role-team-expansion.excalidraw).
+
 ## How a Task Flows Through the Layers
 
 A concrete example — "ship a feature":

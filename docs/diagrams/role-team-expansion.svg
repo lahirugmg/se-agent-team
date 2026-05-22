@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" font-family="system-ui, -apple-system, sans-serif">
+
+  <text x="500" y="28" text-anchor="middle" font-size="20" font-weight="600" fill="#111827">Roles Expand into Orchestrated Teams of Subagents</text>
+  <text x="500" y="50" text-anchor="middle" font-size="13" fill="#4b5563">Pre-work and post-work run sequentially; the execution phase can fan out to multiple sub-agents in parallel.</text>
+
+  <text x="500" y="80" text-anchor="middle" font-size="11" font-style="italic" fill="#6b7280">The eight role units (one per SDLC stage)</text>
+
+  <rect x="65" y="90" width="100" height="50" rx="8" fill="#fef08a" stroke="#ca8a04" stroke-width="2"/>
+  <text x="115" y="113" text-anchor="middle" font-size="12" fill="#78350f">Business</text>
+  <text x="115" y="128" text-anchor="middle" font-size="12" fill="#78350f">Analyst</text>
+
+  <rect x="175" y="90" width="100" height="50" rx="8" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
+  <text x="225" y="113" text-anchor="middle" font-size="12" fill="#4c1d95">Technical</text>
+  <text x="225" y="128" text-anchor="middle" font-size="12" fill="#4c1d95">Architect</text>
+
+  <rect x="285" y="90" width="100" height="50" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <text x="335" y="113" text-anchor="middle" font-size="12" fill="#1e3a8a">Software</text>
+  <text x="335" y="128" text-anchor="middle" font-size="12" fill="#1e3a8a">Engineer</text>
+
+  <rect x="395" y="90" width="100" height="50" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text x="445" y="113" text-anchor="middle" font-size="12" fill="#14532d">QA</text>
+  <text x="445" y="128" text-anchor="middle" font-size="12" fill="#14532d">Engineer</text>
+
+  <rect x="505" y="90" width="100" height="50" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+  <text x="555" y="113" text-anchor="middle" font-size="12" fill="#7f1d1d">Security</text>
+  <text x="555" y="128" text-anchor="middle" font-size="12" fill="#7f1d1d">Engineer</text>
+
+  <rect x="615" y="90" width="100" height="50" rx="8" fill="#ffedd5" stroke="#ea580c" stroke-width="2"/>
+  <text x="665" y="113" text-anchor="middle" font-size="12" fill="#7c2d12">Platform</text>
+  <text x="665" y="128" text-anchor="middle" font-size="12" fill="#7c2d12">Engineer</text>
+
+  <rect x="725" y="90" width="100" height="50" rx="8" fill="#cffafe" stroke="#0891b2" stroke-width="2"/>
+  <text x="775" y="120" text-anchor="middle" font-size="12" fill="#155e75">SRE</text>
+
+  <rect x="835" y="90" width="100" height="50" rx="8" fill="#f3f4f6" stroke="#6b7280" stroke-width="2"/>
+  <text x="885" y="113" text-anchor="middle" font-size="12" fill="#374151">Technical</text>
+  <text x="885" y="128" text-anchor="middle" font-size="12" fill="#374151">Writer</text>
+
+  <line x1="335" y1="143" x2="260" y2="180" stroke="#2563eb" stroke-width="2" stroke-dasharray="4,3"/>
+  <polygon points="265,176 268,184 257,182" fill="#2563eb"/>
+  <text x="290" y="172" text-anchor="middle" font-size="10" font-style="italic" fill="#2563eb">expand</text>
+
+  <line x1="445" y1="143" x2="740" y2="180" stroke="#16a34a" stroke-width="2" stroke-dasharray="4,3"/>
+  <polygon points="735,176 732,184 743,182" fill="#16a34a"/>
+  <text x="700" y="172" text-anchor="middle" font-size="10" font-style="italic" fill="#16a34a">expand</text>
+
+  <!-- ============ TEAM A: SOFTWARE ENGINEER ============ -->
+  <rect x="30" y="185" width="460" height="370" rx="12" fill="#f8fafc" stroke="#2563eb" stroke-width="2" stroke-dasharray="6,3"/>
+  <text x="260" y="210" text-anchor="middle" font-size="14" font-weight="600" fill="#1e3a8a">Software Engineer Team</text>
+
+  <rect x="190" y="225" width="140" height="55" rx="8" fill="#1e3a8a" stroke="#1e3a8a" stroke-width="2"/>
+  <text x="260" y="249" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff">Orchestrator</text>
+  <text x="260" y="267" text-anchor="middle" font-size="10" fill="#dbeafe">tracks subagents</text>
+
+  <!-- Lines from orchestrator to each sub-agent -->
+  <line x1="260" y1="282" x2="80" y2="335" stroke="#94a3b8" stroke-width="1.5"/>
+  <line x1="260" y1="282" x2="170" y2="335" stroke="#2563eb" stroke-width="1.7"/>
+  <line x1="260" y1="282" x2="260" y2="335" stroke="#2563eb" stroke-width="1.7"/>
+  <line x1="260" y1="282" x2="350" y2="335" stroke="#2563eb" stroke-width="1.7"/>
+  <line x1="260" y1="282" x2="440" y2="335" stroke="#94a3b8" stroke-width="1.5"/>
+
+  <!-- Execution group highlight (behind exec boxes) -->
+  <rect x="125" y="320" width="270" height="80" rx="10" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5" stroke-dasharray="5,3" opacity="0.85"/>
+  <text x="140" y="334" font-size="9" font-weight="600" fill="#2563eb">⇉ PARALLEL</text>
+
+  <!-- Pre-work box -->
+  <rect x="40" y="335" width="80" height="60" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="80" y="368" text-anchor="middle" font-size="11" font-weight="600" fill="#1e3a8a">spec-writing</text>
+  <text x="80" y="384" text-anchor="middle" font-size="9" fill="#475569">pre-work</text>
+
+  <!-- Execution boxes (3 parallel) -->
+  <rect x="130" y="345" width="80" height="50" rx="8" fill="#ffffff" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="170" y="370" text-anchor="middle" font-size="11" font-weight="600" fill="#1e3a8a">implementation</text>
+  <text x="170" y="385" text-anchor="middle" font-size="9" fill="#475569">execution</text>
+
+  <rect x="220" y="345" width="80" height="50" rx="8" fill="#ffffff" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="260" y="370" text-anchor="middle" font-size="11" font-weight="600" fill="#1e3a8a">debugging</text>
+  <text x="260" y="385" text-anchor="middle" font-size="9" fill="#475569">execution</text>
+
+  <rect x="310" y="345" width="80" height="50" rx="8" fill="#ffffff" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="350" y="370" text-anchor="middle" font-size="11" font-weight="600" fill="#1e3a8a">refactoring</text>
+  <text x="350" y="385" text-anchor="middle" font-size="9" fill="#475569">execution</text>
+
+  <!-- Post-work box -->
+  <rect x="400" y="335" width="80" height="60" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="440" y="368" text-anchor="middle" font-size="11" font-weight="600" fill="#1e3a8a">code-review</text>
+  <text x="440" y="384" text-anchor="middle" font-size="9" fill="#475569">post-work</text>
+
+  <!-- Phase labels below boxes -->
+  <text x="80" y="420" text-anchor="middle" font-size="10" font-style="italic" fill="#475569">sequential</text>
+  <text x="260" y="420" text-anchor="middle" font-size="10" font-style="italic" font-weight="600" fill="#2563eb">3+ agents in parallel</text>
+  <text x="440" y="420" text-anchor="middle" font-size="10" font-style="italic" fill="#475569">sequential</text>
+
+  <!-- Extra skills -->
+  <text x="260" y="448" text-anchor="middle" font-size="10" font-style="italic" fill="#64748b">execution pool also includes: migration, dependency-update,</text>
+  <text x="260" y="462" text-anchor="middle" font-size="10" font-style="italic" fill="#64748b">performance-optimization, incremental-implementation, ...</text>
+
+  <text x="260" y="492" text-anchor="middle" font-size="10" fill="#374151">Team = the set of skills the role owns</text>
+  <text x="260" y="523" text-anchor="middle" font-size="9" font-style="italic" fill="#6b7280">Orchestrator dispatches sub-agents — fans out for parallel execution, joins results for review</text>
+
+  <!-- ============ TEAM B: QA ENGINEER ============ -->
+  <rect x="510" y="185" width="460" height="370" rx="12" fill="#f8fafc" stroke="#16a34a" stroke-width="2" stroke-dasharray="6,3"/>
+  <text x="740" y="210" text-anchor="middle" font-size="14" font-weight="600" fill="#14532d">QA Engineer Team</text>
+
+  <rect x="670" y="225" width="140" height="55" rx="8" fill="#14532d" stroke="#14532d" stroke-width="2"/>
+  <text x="740" y="249" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff">Orchestrator</text>
+  <text x="740" y="267" text-anchor="middle" font-size="10" fill="#dcfce7">tracks subagents</text>
+
+  <line x1="740" y1="282" x2="560" y2="335" stroke="#94a3b8" stroke-width="1.5"/>
+  <line x1="740" y1="282" x2="650" y2="335" stroke="#16a34a" stroke-width="1.7"/>
+  <line x1="740" y1="282" x2="740" y2="335" stroke="#16a34a" stroke-width="1.7"/>
+  <line x1="740" y1="282" x2="830" y2="335" stroke="#16a34a" stroke-width="1.7"/>
+  <line x1="740" y1="282" x2="920" y2="335" stroke="#94a3b8" stroke-width="1.5"/>
+
+  <rect x="605" y="320" width="270" height="80" rx="10" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5" stroke-dasharray="5,3" opacity="0.85"/>
+  <text x="620" y="334" font-size="9" font-weight="600" fill="#16a34a">⇉ PARALLEL</text>
+
+  <rect x="520" y="335" width="80" height="60" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="560" y="368" text-anchor="middle" font-size="11" font-weight="600" fill="#14532d">test-planning</text>
+  <text x="560" y="384" text-anchor="middle" font-size="9" fill="#475569">pre-work</text>
+
+  <rect x="610" y="345" width="80" height="50" rx="8" fill="#ffffff" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="650" y="370" text-anchor="middle" font-size="11" font-weight="600" fill="#14532d">test-writing</text>
+  <text x="650" y="385" text-anchor="middle" font-size="9" fill="#475569">execution</text>
+
+  <rect x="700" y="345" width="80" height="50" rx="8" fill="#ffffff" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="740" y="370" text-anchor="middle" font-size="11" font-weight="600" fill="#14532d">browser-testing</text>
+  <text x="740" y="385" text-anchor="middle" font-size="9" fill="#475569">execution</text>
+
+  <rect x="790" y="345" width="80" height="50" rx="8" fill="#ffffff" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="830" y="370" text-anchor="middle" font-size="11" font-weight="600" fill="#14532d">exploratory</text>
+  <text x="830" y="385" text-anchor="middle" font-size="9" fill="#475569">execution</text>
+
+  <rect x="880" y="335" width="80" height="60" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="920" y="368" text-anchor="middle" font-size="11" font-weight="600" fill="#14532d">bug-report</text>
+  <text x="920" y="384" text-anchor="middle" font-size="9" fill="#475569">post-work</text>
+
+  <text x="560" y="420" text-anchor="middle" font-size="10" font-style="italic" fill="#475569">sequential</text>
+  <text x="740" y="420" text-anchor="middle" font-size="10" font-style="italic" font-weight="600" fill="#16a34a">3+ agents in parallel</text>
+  <text x="920" y="420" text-anchor="middle" font-size="10" font-style="italic" fill="#475569">sequential</text>
+
+  <text x="740" y="448" text-anchor="middle" font-size="10" font-style="italic" fill="#64748b">execution pool also includes: performance-testing, regression-testing,</text>
+  <text x="740" y="462" text-anchor="middle" font-size="10" font-style="italic" fill="#64748b">api-testing, accessibility-testing, ...</text>
+
+  <text x="740" y="492" text-anchor="middle" font-size="10" fill="#374151">Team = the set of skills the role owns</text>
+  <text x="740" y="523" text-anchor="middle" font-size="9" font-style="italic" fill="#6b7280">Same orchestrator pattern — sub-agents run side-by-side wherever the work is independent</text>
+
+  <text x="500" y="582" text-anchor="middle" font-size="12" font-weight="500" fill="#111827">Sequential pre-work and post-work; parallel execution. The pattern applies to all 8 role units — each its own orchestrated subagent team.</text>
+
+</svg>
