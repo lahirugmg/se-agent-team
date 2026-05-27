@@ -1,6 +1,7 @@
 # Skill: ship-feature
 
 **Type:** composite
+**Trigger:** Take a feature requirement end-to-end from spec to merged, reviewed code
 **Sub-skills:** spec-writing → implementation → code-review
 **Phases:** Pre-work: spec-writing | Execution: implementation | Post-work: code-review or agent-output-review
 

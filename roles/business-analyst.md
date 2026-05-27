@@ -50,4 +50,4 @@ When stakeholders propose solutions, the BA's job is to surface the underlying p
 
 ## Source
 
-Behavioral rules and skill definitions: [se-agent-playbook/core/agents/business-analyst/agent.md](../se-agent-playbook/core/agents/business-analyst/agent.md)
+Behavioral rules and skill definitions: [agents/business-analyst/agent.md](../agents/business-analyst/agent.md)

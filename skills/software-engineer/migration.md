@@ -1,7 +1,7 @@
 # Skill: migration
 
 **Type:** atomic
-**Scope:** Plan and execute a migration — schema, data, API, or infrastructure — with rollback capability and verified correctness.
+**Trigger:** Plan and execute schema, data, or API migrations
 
 ## When to Invoke
 

@@ -1,6 +1,7 @@
 # Skill: build-platform
 
 **Type:** composite
+**Trigger:** Take a platform end-to-end from developer-contract design to self-served deployment
 **Sub-skills:** idp-design → golden-path → infrastructure-as-code → containerization → pipeline-design → deployment → platform-observability
 **Phases:** Pre-work: idp-design, golden-path | Execution: infrastructure-as-code, containerization, pipeline-design, build-optimization | Post-work: deployment, platform-observability
 

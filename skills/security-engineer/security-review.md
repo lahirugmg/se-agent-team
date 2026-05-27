@@ -1,6 +1,7 @@
 # Skill: security-review
 
 **Type:** composite
+**Trigger:** Take a system end-to-end from threat model to a compliance-checked risk picture
 **Sub-skills:** threat-modeling → security-audit → vulnerability-assessment
 **Phases:** Pre-work: threat-modeling | Execution: security-audit, vulnerability-assessment | Post-work: compliance-review (run after this composite)
 

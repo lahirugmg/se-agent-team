@@ -1,6 +1,7 @@
 # Skill: incident-response
 
 **Type:** atomic
+**Trigger:** Coordinate and document the response to an active incident
 
 ## Purpose
 

@@ -1,6 +1,7 @@
 # Skill: containerization
 
 **Type:** atomic
+**Trigger:** Establish container standards or containerise an application
 
 ## Purpose
 

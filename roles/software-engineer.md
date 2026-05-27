@@ -56,4 +56,4 @@ When the spec is ambiguous, the engineer stops and asks — they do not interpre
 
 ## Source
 
-Behavioral rules and skill definitions: [se-agent-playbook/core/agents/software-engineer/agent.md](../se-agent-playbook/core/agents/software-engineer/agent.md)
+Behavioral rules and skill definitions: [agents/software-engineer/agent.md](../agents/software-engineer/agent.md)

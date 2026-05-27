@@ -1,6 +1,7 @@
 # Skill: build-optimization
 
 **Type:** atomic
+**Trigger:** Identify and address bottlenecks in build or pipeline execution time
 
 ## Purpose
 

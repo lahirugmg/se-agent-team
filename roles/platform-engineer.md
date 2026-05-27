@@ -55,4 +55,4 @@ When teams route around the platform, that is a product signal — not a complia
 
 ## Source
 
-Behavioral rules and skill definitions: [se-agent-playbook/core/agents/platform-engineer/agent.md](../se-agent-playbook/core/agents/platform-engineer/agent.md)
+Behavioral rules and skill definitions: [agents/platform-engineer/agent.md](../agents/platform-engineer/agent.md)

@@ -1,6 +1,7 @@
 # Skill: idp-design
 
 **Type:** atomic
+**Trigger:** Design an internal developer platform — capabilities, self-service boundaries, and developer contract
 
 ## Purpose
 

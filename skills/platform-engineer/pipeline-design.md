@@ -1,6 +1,7 @@
 # Skill: pipeline-design
 
 **Type:** atomic
+**Trigger:** Design or refactor a CI/CD pipeline or shared pipeline template
 
 ## Purpose
 

@@ -52,4 +52,4 @@ When the requirements conflict with hard constraints, the Architect surfaces the
 
 ## Source
 
-Behavioral rules and skill definitions: [se-agent-playbook/core/agents/technical-architect/agent.md](../se-agent-playbook/core/agents/technical-architect/agent.md)
+Behavioral rules and skill definitions: [agents/technical-architect/agent.md](../agents/technical-architect/agent.md)

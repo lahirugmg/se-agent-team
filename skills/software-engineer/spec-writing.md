@@ -1,7 +1,7 @@
 # Skill: spec-writing
 
 **Type:** atomic
-**Scope:** Produce a clear, testable implementation spec before code is written.
+**Trigger:** Write a testable spec before implementation begins
 
 ## When to Invoke
 

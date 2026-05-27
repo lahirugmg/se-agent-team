@@ -6,7 +6,7 @@ A tool-agnostic stack of AI agents that simulate a full software engineering org
 
 The project is built from the **organization** outward — first identifying the role areas a software org actually has, then forming teams of skills around each role, then backing each skill with a focused micro-agent, then placing an orchestrator over each team so the work coordinates itself.
 
-## The Five Layers
+## The Four Layers
 
 | Layer | What it represents | Lives in |
 |---|---|---|
@@ -14,7 +14,6 @@ The project is built from the **organization** outward — first identifying the
 | **2. Skill Teams** | The work each role does, expressed as a team of skills. A role's team is *defined by its skills*. | [agents/&lt;role&gt;/SKILLS.md](agents/) |
 | **3. Micro-Agents** | One agent per skill, each with narrow context tuned to that skill alone. No skill agent carries knowledge beyond its slice. | [skills/&lt;role&gt;/&lt;skill&gt;.md](skills/) |
 | **4. Orchestrators** | One orchestrator agent per role. Holds the role's behavioral rules; dispatches the right micro-agent for the task; keeps track of subagents. | [agents/&lt;role&gt;/agent.md](agents/) |
-| **5. Adapters** | Tool-specific bindings. Map the role / orchestrator / skill structure to Claude Code, Copilot, Cursor, etc. — no content of their own. | [adapters/](adapters/) |
 
 ### Layer 1 — Roles: the organizational map
 
@@ -69,18 +68,6 @@ Each role gets an **orchestrator agent** at [`agents/<role>/agent.md`](agents/).
 
 The orchestrator is the entry point for a role. It does not execute skills itself — it routes work to the micro-agents in its team and validates the output before passing the work on.
 
-### Layer 5 — Adapters: tool-specific bindings
-
-The first four layers are tool-agnostic. The fifth layer maps them into each AI coding tool's native format:
-
-- **Claude Code** — `.claude/agents/*.md` with YAML frontmatter, imports via `@path/to/file`
-- **GitHub Copilot** — `.github/` chat participants (planned)
-- **Cursor** — `.cursor/rules/*.md` (planned)
-
-Adapters contain no content of their own. They are thin: each adapter file imports the role's orchestrator, its skill index, and any guidelines, then declares which tools (bash, web search, file reads) the orchestrator may invoke.
-
-Start with [adapters/claude/GETTING-STARTED.md](adapters/claude/GETTING-STARTED.md).
-
 ## From Roles to Org Units
 
 So far each role has been described as a single area of responsibility. In a real organization, each of those eight roles is *not just a role* — it is a **unit, a team, or a department**: a Business Analysis group, an Architecture practice, an Engineering team, a QA team, a Security team, a Platform team, an SRE team, a Documentation team.
@@ -125,8 +112,7 @@ The same pattern applies to all eight role units. Each unit owns its own orchest
 A concrete example — "ship a feature":
 
 ```
-Layer 5 ─ Claude Code adapter invokes the software-engineer orchestrator
-Layer 4 ─ Orchestrator reads the task, applies behavioral rules, picks the composite skill `ship-feature`
+Layer 4 ─ The software-engineer orchestrator picks up the task, applies behavioral rules, selects the composite skill `ship-feature`
 Layer 3 ─ `ship-feature` chains micro-agents: spec-writing → incremental-implementation → code-review
 Layer 2 ─ Each micro-agent operates within the software-engineer skill team
 Layer 1 ─ The software-engineer role owns the implementation stage; output hands off to QA Engineer
@@ -138,22 +124,18 @@ Each layer enforces a constraint the next layer relies on. Skip a layer and the 
 
 ```
 se-agent-team/
-├── README.md              ← this file (the only file outside folders)
+├── README.md              ← this file
+├── LICENSE                ← Apache 2.0
 ├── roles/                 ← Layer 1: role charters
 │   └── <role>.md
 ├── agents/                ← Layer 4: orchestrators
+│   ├── COMMON.md          ← universal behavioral rules every role inherits
 │   └── <role>/
-│       ├── agent.md       ← orchestrator definition (behavioral rules + workflow)
+│       ├── agent.md       ← orchestrator definition (role-specific rules + workflow)
 │       └── SKILLS.md      ← Layer 2: the role's skill team index
 ├── skills/                ← Layer 3: micro-agents
 │   └── <role>/
 │       └── <skill>.md     ← one micro-agent per skill
-├── adapters/              ← Layer 5: tool bindings
-│   └── claude/
-│       ├── <role>.md      ← per-role adapter
-│       ├── SPEC.md
-│       ├── MCP.md
-│       └── examples/
 └── docs/
     ├── ROLES.md           ← responsibilities matrix
     ├── SDLC.md            ← stage-by-stage flow
@@ -162,12 +144,25 @@ se-agent-team/
 
 ## Principles
 
-- **Org-first, tool-last.** Identify the roles in a real software org before designing any agent. Tool adapters come last.
+- **Org-first.** Identify the roles in a real software org before designing any agent.
 - **Skills define teams.** A role's team is the set of skills it owns — not a head-count.
 - **Micro-context per skill.** Each skill agent knows its skill and nothing else. Narrow agents reason better.
 - **Orchestrator per role.** One coordinator per role keeps track of its subagents, gates between phases, and the role's artifacts.
 - **Full SDLC coverage.** Every stage from requirements to documentation has an owning role.
-- **No content in adapters.** Adapters import from the core layers; updating a skill or orchestrator reflects everywhere.
+- **Tool-agnostic core.** The four layers describe the team itself — independent of any AI coding tool. Tool integration is downstream.
+
+## References
+
+The concept layer borrows one focused idea from each of four public agent/skill repos — not the full repo, just the pattern:
+
+| Source | Concept extracted | Where it lives here |
+|---|---|---|
+| [andrej-karpathy-skills](https://lnkd.in/eNbBQDXS) | Agent-host entrypoint; guardrails for common LLM failure modes | [AGENTS.md](AGENTS.md); Fail-Loud / Surface-Conflicts / Read-Before-Write rules in [agents/COMMON.md](agents/COMMON.md) |
+| [agent-skills](https://lnkd.in/eGe4q88Z) | One skill per file, with metadata a host can route on | The 70 `skills/<role>/<skill>.md` files, each with a `**Trigger:**` line |
+| [Superpowers](https://lnkd.in/e9Dz2Tj3) | The trigger description is the primary routing signal | The `**Trigger:**` field + the "When to use" column in every [SKILLS.md](agents/) |
+| [GSD (Get Shit Done)](https://lnkd.in/ekBUzyn3) | Explicit phase gates for long-running workflows | The three-phase pre / execution / post contract with gates in [agents/COMMON.md](agents/COMMON.md) |
+
+What this repo adds on top: the **org-first abstraction** — eight roles covering the full SDLC, an orchestrator per role, and a fixed concurrency contract (sequential pre/post, parallel execution) for fan-out across sub-agents.
 
 ## License
 

@@ -10,6 +10,8 @@ Invoked on demand. See @core/agents/technical-architect/SKILLS.md for the full i
 
 ## Behavioral Rules
 
+Inherits [agents/COMMON.md](../COMMON.md) — the three-phase workflow contract, token budgets, and the universal Fail Loud / Checkpoint / Surface Conflicts / Read Before You Write principles. The rules below are the role-specific additions and applications.
+
 ### Agent Workflow
 
 **Never design before assessing feasibility, and never hand off a design that hasn't been reviewed against requirements.**
@@ -90,12 +92,6 @@ Before proposing changes:
 - Identify what constraints the existing design was solving for.
 - Confirm which of those constraints still apply.
 - If you would design it differently, understand why it was built as it is before assuming it was a mistake.
-
-### Token Budgets Are Not Advisory
-
-Per-artifact budget: 4,000 tokens.
-Per-session budget: 30,000 tokens.
-A design session that runs too long without checkpointing produces decisions that aren't legible to anyone who wasn't in the room.
 
 ### Checkpoint After Each Major Design Decision
 

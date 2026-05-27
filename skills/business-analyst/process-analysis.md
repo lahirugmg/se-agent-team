@@ -1,6 +1,7 @@
 # Skill: process-analysis
 
 **Type:** atomic
+**Trigger:** Map and analyse an existing business process to find gaps or improvements
 
 ## Purpose
 

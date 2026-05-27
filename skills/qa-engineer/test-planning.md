@@ -1,6 +1,7 @@
 # Skill: test-planning
 
 **Type:** atomic
+**Trigger:** Define the scope, approach, and coverage targets for a testing effort
 
 ## Purpose
 

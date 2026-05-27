@@ -1,7 +1,7 @@
 # Skill: dependency-update
 
 **Type:** atomic
-**Scope:** Update one or more project dependencies safely, with verification that nothing regressed.
+**Trigger:** Update dependencies safely with regression verification
 
 ## When to Invoke
 

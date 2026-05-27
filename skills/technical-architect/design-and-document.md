@@ -1,6 +1,7 @@
 # Skill: design-and-document
 
 **Type:** composite
+**Trigger:** Take a feasible idea end-to-end to a signed-off technical spec with supporting ADRs
 **Sub-skills:** system-design → adr-writing → technical-spec
 **Phases:** Pre-work: feasibility-analysis (run before invoking this composite) | Execution: system-design, adr-writing, technical-spec | Post-work: architecture-review (run after)
 

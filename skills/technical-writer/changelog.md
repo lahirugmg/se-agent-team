@@ -1,6 +1,7 @@
 # Skill: changelog
 
 **Type:** atomic
+**Trigger:** Write a structured changelog entry for a release or significant change
 
 ## Purpose
 

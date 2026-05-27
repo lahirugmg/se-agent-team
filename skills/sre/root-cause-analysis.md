@@ -1,6 +1,7 @@
 # Skill: root-cause-analysis
 
 **Type:** atomic
+**Trigger:** Investigate and document the root cause of a failure or degradation
 
 ## Purpose
 

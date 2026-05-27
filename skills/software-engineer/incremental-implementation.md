@@ -1,6 +1,7 @@
 # Skill: incremental-implementation
 
 **Type:** atomic
+**Trigger:** Build in thin vertical slices — implement, test, verify, commit per slice
 
 ## Purpose
 

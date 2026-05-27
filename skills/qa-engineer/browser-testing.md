@@ -1,6 +1,7 @@
 # Skill: browser-testing
 
 **Type:** atomic
+**Trigger:** Test and debug web UI using live browser runtime data
 
 ## Purpose
 

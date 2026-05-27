@@ -1,6 +1,7 @@
 # Skill: requirements-gathering
 
 **Type:** atomic
+**Trigger:** Extract and document requirements from stakeholders
 
 ## Purpose
 

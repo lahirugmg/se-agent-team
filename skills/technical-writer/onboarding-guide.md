@@ -1,6 +1,7 @@
 # Skill: onboarding-guide
 
 **Type:** atomic
+**Trigger:** Create onboarding documentation for a new engineer or user joining a system
 
 ## Purpose
 

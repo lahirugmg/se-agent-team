@@ -1,7 +1,7 @@
 # Skill: agent-output-review
 
 **Type:** atomic
-**Scope:** Verification of AI-generated code before it is merged or deployed. Distinct from code-review — this targets the failure modes specific to AI output.
+**Trigger:** Verify AI-generated code for drift, logic gaps, missing edge cases
 
 ## When to Invoke
 

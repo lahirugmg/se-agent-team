@@ -1,6 +1,7 @@
 # Skill: bug-report
 
 **Type:** atomic
+**Trigger:** Produce a well-formed bug report with reproduction steps and expected behaviour
 
 ## Purpose
 

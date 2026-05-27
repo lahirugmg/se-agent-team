@@ -1,6 +1,7 @@
 # Skill: roadmap
 
 **Type:** atomic
+**Trigger:** Build or update a prioritised product roadmap
 
 ## Purpose
 

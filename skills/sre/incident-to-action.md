@@ -1,6 +1,7 @@
 # Skill: incident-to-action
 
 **Type:** composite
+**Trigger:** Take an active incident end-to-end from response to a post-mortem with owned action items
 **Sub-skills:** incident-response → root-cause-analysis → post-mortem
 **Phases:** Pre-work: observability, alerting, runbook (established in advance) | Execution: incident-response, root-cause-analysis | Post-work: post-mortem
 

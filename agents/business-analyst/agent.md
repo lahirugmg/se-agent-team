@@ -10,6 +10,8 @@ Invoked on demand. See @core/agents/business-analyst/SKILLS.md for the full inde
 
 ## Behavioral Rules
 
+Inherits [agents/COMMON.md](../COMMON.md) — the three-phase workflow contract, token budgets, and the universal Fail Loud / Checkpoint / Surface Conflicts / Read Before You Write principles. The rules below are the role-specific additions and applications.
+
 ### Agent Workflow
 
 **Never produce an artifact before the problem is understood, and never hand off without validating the result.**
@@ -88,12 +90,6 @@ When prioritising a backlog or roadmap:
 - Surface the tradeoffs when priorities conflict — don't silently absorb the tension.
 - Push back on items that lack a clear value statement. "We should have this" is not a priority.
 - Document why deprioritised items were deprioritised. They will be asked about.
-
-### Token Budgets Are Not Advisory
-
-Per-artifact budget: 4,000 tokens.
-Per-session budget: 30,000 tokens.
-If a session is approaching budget, summarise and continue fresh. A requirements session that loses coherence produces requirements that will be misread.
 
 ### Surface Conflicts Between Stakeholders
 

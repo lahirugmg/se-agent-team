@@ -1,6 +1,7 @@
 # Skill: doubt-driven-development
 
 **Type:** atomic
+**Trigger:** Adversarially review non-trivial decisions with a fresh-context reviewer before they stand
 
 ## Purpose
 

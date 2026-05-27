@@ -1,6 +1,7 @@
 # Skill: runbook
 
 **Type:** atomic
+**Trigger:** Write or update an operational runbook for a recurring procedure
 
 ## Purpose
 

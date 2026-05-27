@@ -1,6 +1,7 @@
 # Skill: performance-optimization
 
 **Type:** atomic
+**Trigger:** Identify and fix performance bottlenecks through measurement, not intuition
 
 ## Purpose
 

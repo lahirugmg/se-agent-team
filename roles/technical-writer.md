@@ -58,4 +58,4 @@ When documentation and the system disagree, the Writer reports the gap — they 
 
 ## Source
 
-Behavioral rules and skill definitions: [se-agent-playbook/core/agents/technical-writer/agent.md](../se-agent-playbook/core/agents/technical-writer/agent.md)
+Behavioral rules and skill definitions: [agents/technical-writer/agent.md](../agents/technical-writer/agent.md)

@@ -1,6 +1,7 @@
 # Skill: adr-writing
 
 **Type:** atomic
+**Trigger:** Document an architectural decision with context, alternatives, and rationale
 
 ## Purpose
 

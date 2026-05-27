@@ -1,6 +1,7 @@
 # Skill: test-writing
 
 **Type:** atomic
+**Trigger:** Write test cases or automated tests for a specific feature or code path
 
 ## Purpose
 

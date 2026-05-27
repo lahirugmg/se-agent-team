@@ -1,6 +1,7 @@
 # Skill: infrastructure-as-code
 
 **Type:** atomic
+**Trigger:** Write or review infrastructure definitions in Terraform, Pulumi, Kubernetes manifests, or similar
 
 ## Purpose
 

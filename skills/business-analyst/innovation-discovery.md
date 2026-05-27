@@ -1,6 +1,7 @@
 # Skill: innovation-discovery
 
 **Type:** atomic
+**Trigger:** Explore unspoken needs and opportunities before a ticket exists
 
 ## Purpose
 

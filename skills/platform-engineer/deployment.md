@@ -1,6 +1,7 @@
 # Skill: deployment
 
 **Type:** atomic
+**Trigger:** Execute a platform deployment with rollback coverage and post-deploy verification
 
 ## Purpose
 

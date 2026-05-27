@@ -1,6 +1,7 @@
 # Skill: system-design
 
 **Type:** atomic
+**Trigger:** Design the architecture for a new system or major component
 
 ## Purpose
 

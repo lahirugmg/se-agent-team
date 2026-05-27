@@ -1,6 +1,7 @@
 # Skill: post-mortem
 
 **Type:** atomic
+**Trigger:** Produce a blameless post-mortem with timeline, root cause, and action items
 
 ## Purpose
 

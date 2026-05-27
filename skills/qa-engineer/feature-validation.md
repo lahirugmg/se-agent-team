@@ -1,6 +1,7 @@
 # Skill: feature-validation
 
 **Type:** composite
+**Trigger:** Plan, execute, and report verdict on validating a feature end-to-end
 **Sub-skills:** test-planning → test-writing → exploratory-testing → bug-report
 **Phases:** Pre-work: test-planning | Execution: test-writing, exploratory-testing | Post-work: bug-report
 

@@ -1,6 +1,7 @@
 # Skill: golden-path
 
 **Type:** atomic
+**Trigger:** Define an opinionated, supported workflow for teams to adopt for a specific task
 
 ## Purpose
 

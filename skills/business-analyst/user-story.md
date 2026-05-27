@@ -1,6 +1,7 @@
 # Skill: user-story
 
 **Type:** atomic
+**Trigger:** Write well-formed user stories with acceptance criteria
 
 ## Purpose
 

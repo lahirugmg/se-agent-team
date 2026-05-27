@@ -1,6 +1,7 @@
 # Skill: intrapreneur-workflow
 
 **Type:** composite
+**Trigger:** Discover, scope, ship, and communicate an innovation initiative end-to-end
 **Sub-skills:** discovery → spec-writing → build (ship-feature) → agent-output-review → stakeholder communication
 **Phases:** Pre-work: discovery, spec-writing | Execution: build (ship-feature) | Post-work: agent-output-review, stakeholder communication
 

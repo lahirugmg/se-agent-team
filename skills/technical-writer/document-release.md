@@ -1,6 +1,7 @@
 # Skill: document-release
 
 **Type:** composite
+**Trigger:** Take a release end-to-end from API/changelog to stakeholder communication
 **Sub-skills:** api-docs → changelog → stakeholder-trust
 **Phases:** Pre-work: read implementation, git diff, and existing docs (inherent, no dedicated skill) | Execution: api-docs, changelog | Post-work: stakeholder-trust
 

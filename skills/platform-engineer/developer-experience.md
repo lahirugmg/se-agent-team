@@ -1,6 +1,7 @@
 # Skill: developer-experience
 
 **Type:** atomic
+**Trigger:** Measure and improve developer productivity and satisfaction with the platform
 
 ## Purpose
 

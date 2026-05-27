@@ -1,6 +1,7 @@
 # Skill: requirements-to-prd
 
 **Type:** composite
+**Trigger:** Take a stakeholder ask end-to-end from elicitation to a signed-off PRD
 **Sub-skills:** requirements-gathering → user-story → prd-writing
 **Phases:** Pre-work: requirements-gathering | Execution: user-story, prd-writing | Post-work: stakeholder sign-off (embedded in Step 3 gate)
 

@@ -1,6 +1,7 @@
 # Skill: capacity-planning
 
 **Type:** atomic
+**Trigger:** Forecast resource needs based on growth trends and SLO requirements
 
 ## Purpose
 

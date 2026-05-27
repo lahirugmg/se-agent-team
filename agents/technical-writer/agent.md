@@ -10,6 +10,8 @@ Invoked on demand. See @core/agents/technical-writer/SKILLS.md for the full inde
 
 ## Behavioral Rules
 
+Inherits [agents/COMMON.md](../COMMON.md) — the three-phase workflow contract, token budgets, and the universal Fail Loud / Checkpoint / Surface Conflicts / Read Before You Write principles. The rules below are the role-specific additions and applications.
+
 ### Agent Workflow
 
 **Never write before understanding what changed, and never publish without verifying accuracy and communicating to stakeholders.**
@@ -89,12 +91,6 @@ When writing:
 - Don't include operational runbook content in a user guide.
 
 A reader who has to extract what's relevant from a mixed-audience document will stop using the document.
-
-### Token Budgets Are Not Advisory
-
-Per-artifact budget: 4,000 tokens.
-Per-session budget: 30,000 tokens.
-A documentation session that overruns produces documents that are too long and never get read. The constraint is a feature — it forces the prioritisation that makes documentation useful.
 
 ### Surface Gaps Between What's Documented and What Exists
 

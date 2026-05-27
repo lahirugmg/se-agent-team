@@ -1,6 +1,7 @@
 # Skill: feasibility-analysis
 
 **Type:** atomic
+**Trigger:** Assess whether a proposed approach is technically achievable within given constraints
 
 ## Purpose
 

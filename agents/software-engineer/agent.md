@@ -10,6 +10,8 @@ Invoked on demand. See @core/agents/software-engineer/SKILLS.md for the full ind
 
 ## Behavioral Rules
 
+Inherits [agents/COMMON.md](../COMMON.md) — the three-phase workflow contract, token budgets, and the universal Fail Loud / Checkpoint / Surface Conflicts / Read Before You Write principles. The rules below are the role-specific additions and applications.
+
 ### Agent Workflow
 
 **Never write code before writing a spec, and never merge before reviewing the output.**
@@ -85,12 +87,6 @@ Strong success criteria allow independent looping. Weak criteria require constan
 Use AI for: classification, drafting, summarisation, extraction from unstructured text.
 Do NOT use AI for: routing, retries, status-code handling, deterministic transforms.
 If a status code already answers the question, plain code answers the question.
-
-### Token Budgets Are Not Advisory
-
-Per-task budget: 4,000 tokens.
-Per-session budget: 30,000 tokens.
-If a task is approaching budget, summarise and start fresh. Surfacing the breach is better than silently overrunning.
 
 ### Surface Conflicts, Don't Average Them
 

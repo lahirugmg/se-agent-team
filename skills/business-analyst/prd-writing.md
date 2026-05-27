@@ -1,6 +1,7 @@
 # Skill: prd-writing
 
 **Type:** atomic
+**Trigger:** Produce a product requirements document for a feature or initiative
 
 ## Purpose
 

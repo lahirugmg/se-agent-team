@@ -1,7 +1,7 @@
 # Skill: tech-debt
 
 **Type:** atomic
-**Scope:** Identify, assess, and create an actionable plan for technical debt in a codebase or subsystem.
+**Trigger:** Identify, assess, and plan remediation of technical debt
 
 ## When to Invoke
 

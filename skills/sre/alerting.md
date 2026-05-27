@@ -1,6 +1,7 @@
 # Skill: alerting
 
 **Type:** atomic
+**Trigger:** Define or tune alerts to be symptom-based, actionable, and correctly calibrated
 
 ## Purpose
 

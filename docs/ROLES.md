@@ -53,8 +53,8 @@ Each row is an artifact that flows from one role to another. The receiving role 
 
 ## Boundaries
 
-Failures of role boundary are the most common failures in human teams and AI agent teams alike. Each role's charter calls out explicitly what it does *not* decide; see the **Boundaries** section in each role file under [roles/](roles/).
+Failures of role boundary are the most common failures in human teams and AI agent teams alike. Each role's charter calls out explicitly what it does *not* decide; see the **Boundaries** section in each role file under [roles/](../roles/).
 
 ## Source of Behavior
 
-Every role here corresponds to an agent in [se-agent-playbook](se-agent-playbook/core/agents/). The behavioral rules, skill catalogues, and tool adapters live there. This file describes scope; the playbook describes execution.
+Every role here corresponds to an orchestrator in [agents/](../agents/), with its skill set declared in `agents/<role>/SKILLS.md` and individual micro-agents under [skills/](../skills/). This file describes *scope* — what each role owns and where its work hands off; the orchestrator file describes *execution* — the behavioral rules and workflow gates the role operates under.

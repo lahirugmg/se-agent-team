@@ -1,6 +1,7 @@
 # Skill: estimation
 
 **Type:** atomic
+**Trigger:** Estimate effort or complexity to validate that the backlog is realistically deliverable
 
 ## Purpose
 

@@ -1,6 +1,7 @@
 # Skill: architecture-review
 
 **Type:** atomic
+**Trigger:** Review an existing or proposed architecture against requirements and constraints
 
 ## Purpose
 

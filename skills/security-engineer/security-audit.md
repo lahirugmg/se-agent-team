@@ -1,6 +1,7 @@
 # Skill: security-audit
 
 **Type:** atomic
+**Trigger:** Review a system, codebase, or configuration for security vulnerabilities
 
 ## Purpose
 

@@ -1,6 +1,7 @@
 # Skill: sprint-planning
 
 **Type:** atomic
+**Trigger:** Organise and sequence requirements into executable sprint increments
 
 ## Purpose
 

@@ -1,6 +1,7 @@
 # Skill: compliance-review
 
 **Type:** atomic
+**Trigger:** Assess a system against a compliance framework (SOC 2, GDPR, PCI-DSS) to verify findings are resolved
 
 ## Purpose
 

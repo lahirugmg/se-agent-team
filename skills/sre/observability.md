@@ -1,6 +1,7 @@
 # Skill: observability
 
 **Type:** atomic
+**Trigger:** Design or improve the metrics, logging, and tracing for a service
 
 ## Purpose
 

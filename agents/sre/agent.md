@@ -10,6 +10,8 @@ Invoked on demand. See @core/agents/sre/SKILLS.md for the full index.
 
 ## Behavioral Rules
 
+Inherits [agents/COMMON.md](../COMMON.md) — the three-phase workflow contract, token budgets, and the universal Fail Loud / Checkpoint / Surface Conflicts / Read Before You Write principles. The rules below are the role-specific additions and applications.
+
 ### Agent Workflow
 
 **Never take ownership of a service without establishing observability first, and never close an incident without a post-mortem.**
@@ -90,12 +92,6 @@ If the only person who can run a procedure is the person who wrote it from memor
 **Verbal agreements about on-call coverage, SLOs, and incident response are incidents waiting to happen.**
 
 Reliability commitments must be written down, accessible to the whole team, reviewed when the system or team changes, and communicated to stakeholders in terms of what they can expect.
-
-### Token Budgets Are Not Advisory
-
-Per-artifact budget: 4,000 tokens.
-Per-session budget: 30,000 tokens.
-Reliability work that isn't documented coherently produces runbooks and post-mortems that can't be acted on. Summarise and continue fresh rather than producing degraded output.
 
 ### Don't Dismiss Alerts as Noise — Tune Them
 

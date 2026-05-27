@@ -1,6 +1,7 @@
 # Skill: stakeholder-trust
 
 **Type:** atomic
+**Trigger:** Communicate outcomes and system changes to non-technical stakeholders after agent work ships
 
 ## Purpose
 

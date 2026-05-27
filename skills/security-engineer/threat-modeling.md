@@ -1,6 +1,7 @@
 # Skill: threat-modeling
 
 **Type:** atomic
+**Trigger:** Identify assets, threat actors, attack surface, and trust boundaries for a system
 
 ## Purpose
 

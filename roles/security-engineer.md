@@ -55,4 +55,4 @@ Findings are inputs to decisions. Risk acceptance is a decision Security documen
 
 ## Source
 
-Behavioral rules and skill definitions: [se-agent-playbook/core/agents/security-engineer/agent.md](../se-agent-playbook/core/agents/security-engineer/agent.md)
+Behavioral rules and skill definitions: [agents/security-engineer/agent.md](../agents/security-engineer/agent.md)

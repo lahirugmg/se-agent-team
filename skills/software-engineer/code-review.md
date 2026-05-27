@@ -1,7 +1,7 @@
 # Skill: code-review
 
 **Type:** atomic
-**Scope:** Review human-authored code changes against coding standards, correctness, and security.
+**Trigger:** Review human-authored code before merge
 
 ## When to Invoke
 

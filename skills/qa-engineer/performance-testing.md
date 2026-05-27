@@ -1,6 +1,7 @@
 # Skill: performance-testing
 
 **Type:** atomic
+**Trigger:** Design and execute performance tests against a defined baseline and threshold
 
 ## Purpose
 

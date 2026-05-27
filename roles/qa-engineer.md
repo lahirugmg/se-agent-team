@@ -54,4 +54,4 @@ When the spec and the implementation disagree, the QA Engineer reports the gap â
 
 ## Source
 
-Behavioral rules and skill definitions: [se-agent-playbook/core/agents/qa-engineer/agent.md](../se-agent-playbook/core/agents/qa-engineer/agent.md)
+Behavioral rules and skill definitions: [agents/qa-engineer/agent.md](../agents/qa-engineer/agent.md)

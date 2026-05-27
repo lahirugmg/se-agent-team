@@ -1,6 +1,7 @@
 # Skill: code-simplification
 
 **Type:** atomic
+**Trigger:** Reduce complexity in working code while preserving exact behaviour
 
 ## Purpose
 

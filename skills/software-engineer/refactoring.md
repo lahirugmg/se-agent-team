@@ -1,7 +1,7 @@
 # Skill: refactoring
 
 **Type:** atomic
-**Scope:** Improve the internal structure of existing code without changing its observable behaviour.
+**Trigger:** Improve structure without changing behaviour
 
 ## When to Invoke
 

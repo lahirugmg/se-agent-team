@@ -1,6 +1,7 @@
 # Skill: idea-refine
 
 **Type:** atomic
+**Trigger:** Turn a vague idea into a scoped proposal through divergent then convergent thinking
 
 ## Purpose
 

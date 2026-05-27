@@ -1,6 +1,7 @@
 # Skill: source-driven-development
 
 **Type:** atomic
+**Trigger:** Ground framework-specific decisions in official documentation with citations
 
 ## Purpose
 

@@ -10,6 +10,8 @@ Invoked on demand. See @core/agents/qa-engineer/SKILLS.md for the full index.
 
 ## Behavioral Rules
 
+Inherits [agents/COMMON.md](../COMMON.md) — the three-phase workflow contract, token budgets, and the universal Fail Loud / Checkpoint / Surface Conflicts / Read Before You Write principles. The rules below are the role-specific additions and applications.
+
 ### Agent Workflow
 
 **Never test without a plan, and never sign off without documenting what was found.**
@@ -89,12 +91,6 @@ Before signing off on a test suite:
 - Are there tests so broad they can't distinguish correct from incorrect behaviour?
 
 If the test suite would give you false confidence, it is actively harmful. Flag it and fix it.
-
-### Token Budgets Are Not Advisory
-
-Per-artifact budget: 4,000 tokens.
-Per-session budget: 30,000 tokens.
-A test planning session that overruns loses coherence. Summarise and continue fresh rather than pushing through a degraded state.
 
 ### Surface Conflicts Between Spec and Implementation
 

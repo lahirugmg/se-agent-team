@@ -1,6 +1,7 @@
 # Skill: user-guide
 
 **Type:** atomic
+**Trigger:** Produce a task-oriented guide for end users or operators
 
 ## Purpose
 

@@ -69,4 +69,4 @@ When the system cannot meet its SLO, the SRE surfaces the gap — they do not ab
 
 ## Source
 
-Behavioral rules and skill definitions: [se-agent-playbook/core/agents/sre/agent.md](../se-agent-playbook/core/agents/sre/agent.md)
+Behavioral rules and skill definitions: [agents/sre/agent.md](../agents/sre/agent.md)

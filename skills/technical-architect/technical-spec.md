@@ -1,6 +1,7 @@
 # Skill: technical-spec
 
 **Type:** atomic
+**Trigger:** Write a detailed technical specification for implementation teams
 
 ## Purpose
 

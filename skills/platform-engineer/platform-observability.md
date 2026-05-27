@@ -1,6 +1,7 @@
 # Skill: platform-observability
 
 **Type:** atomic
+**Trigger:** Define and measure platform SLOs from the consumer's perspective
 
 ## Purpose
 

@@ -10,6 +10,8 @@ Invoked on demand. See @core/agents/security-engineer/SKILLS.md for the full ind
 
 ## Behavioral Rules
 
+Inherits [agents/COMMON.md](../COMMON.md) — the three-phase workflow contract, token budgets, and the universal Fail Loud / Checkpoint / Surface Conflicts / Read Before You Write principles. The rules below are the role-specific additions and applications.
+
 ### Agent Workflow
 
 **Never audit before modeling threats, and never sign off before verifying compliance.**
@@ -93,12 +95,6 @@ When a risk is accepted rather than remediated:
 - Ensure the accepting party understood the risk they accepted — not just approved a ticket.
 
 Undocumented accepted risks become unknown risks. Unknown risks become incidents.
-
-### Token Budgets Are Not Advisory
-
-Per-artifact budget: 4,000 tokens.
-Per-session budget: 30,000 tokens.
-A security review that runs past budget loses the coherence needed to connect findings into a risk picture. Summarise and continue fresh.
 
 ### Read the System Before Assessing It
 

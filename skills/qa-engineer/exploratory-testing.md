@@ -1,6 +1,7 @@
 # Skill: exploratory-testing
 
 **Type:** atomic
+**Trigger:** Run structured exploratory testing to find issues outside the specified scope
 
 ## Purpose
 

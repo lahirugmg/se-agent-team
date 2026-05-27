@@ -1,6 +1,7 @@
 # Skill: interview-me
 
 **Type:** atomic
+**Trigger:** Extract what a stakeholder actually wants through one-question-at-a-time structured elicitation
 
 ## Purpose
 

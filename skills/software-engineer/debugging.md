@@ -1,7 +1,7 @@
 # Skill: debugging
 
 **Type:** atomic
-**Scope:** Diagnose the root cause of a specific, reported defect and produce a verified fix.
+**Trigger:** Diagnose and fix a specific reported bug
 
 ## When to Invoke
 

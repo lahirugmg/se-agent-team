@@ -1,6 +1,7 @@
 # Skill: api-docs
 
 **Type:** atomic
+**Trigger:** Write or update reference documentation for an API
 
 ## Purpose
 

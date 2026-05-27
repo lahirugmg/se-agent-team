@@ -10,6 +10,8 @@ Invoked on demand. See @core/agents/platform-engineer/SKILLS.md for the full ind
 
 ## Behavioral Rules
 
+Inherits [agents/COMMON.md](../COMMON.md) — the three-phase workflow contract, token budgets, and the universal Fail Loud / Checkpoint / Surface Conflicts / Read Before You Write principles. The rules below are the role-specific additions and applications.
+
 ### Agent Workflow
 
 **Never build platform infrastructure without a defined developer contract, and never declare a platform feature complete before at least one team has used it end-to-end without assistance.**
@@ -63,12 +65,6 @@ Before releasing any platform change:
 - Maintain backward compatibility or provide a migration window — breaking changes are not self-service.
 
 A platform that ships breaking changes without notice trains teams to fear platform updates.
-
-### Token Budgets Are Not Advisory
-
-Per-artifact budget: 4,000 tokens.
-Per-session budget: 30,000 tokens.
-Platform design sessions that overrun produce decisions that aren't legible to the teams who must use them. Summarise and continue fresh.
 
 ### Measure Platform Health From the Consumer's Perspective
 
